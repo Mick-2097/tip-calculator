@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  <main>
+
+    <div class="logo-area">
+      <img class="logo" src="images/logo.svg" alt="Splitter">
+    </div>
+
+    <div class="desktop">
+      <div class="form">
+        <label class="bill-label" for="bill"><p>Bill</p><p class="no-bill">Enter amount</p></label>
+        <input class="bill" id="bill" type="number" step="0.01" placeholder="0">
+        <label class="tip" for="tip">Select Tip %</label>
+          <div class="grid" id="tip">
+            <button class="percent" id=".05">5%</button>
+            <button class="percent" id=".10">10%</button>
+            <button class="percent" id=".15">15%</button>
+            <button class="percent" id=".25">25%</button>
+            <button class="percent" id=".50">50%</button>
+            <input class="custom" type="number" placeholder="Custom">
+          </div>
+        <label class="head-label" for="head"><p>Number of People</p><p class="error">Can't be zero</p> </label>
+        <input class="head" id="head" type="number" placeholder="0">
+      </div>
+      <div class="output-container">
+        <div class="outputs">
+          <div class="tip-output">
+            <div>
+              <h1>Tip Amount</h1>
+              <h2>/ person</h2>
+            </div>
+            <h3 class="final-tip">$0.00</h3>
+          </div>
+          <div class="total-output">
+            <div>
+              <h1>Total</h1>
+              <h2>/ person</h2>
+            </div>
+            <h3 class="final-bill">$0.00</h3>
+          </div>
+          <button class="reset">Reset</button>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  
+  <footer class="attribution">
+    <p>
+      Challenge by 
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+    </p>
+    &nbsp;
+    <p>
+      Coded by
+      <a href="https://www.frontendmentor.io/profile/Mick-2097">Mick</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
