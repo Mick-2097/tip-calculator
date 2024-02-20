@@ -1,88 +1,89 @@
 :root {
-    --Strong-cyan: hsl(172, 67%, 45%);
-    --Very-dark-cyan: hsl(183, 100%, 15%);
-    --Dark-grayish-cyan: hsl(186, 14%, 43%);
-    --Mick: rgb(13, 104, 109);
-    --Grayish-cyan: hsl(184, 14%, 56%);
-    --Light-grayish-cyan: hsl(185, 41%, 84%);
-    --Very-light-grayish-cyan: hsl(189, 41%, 97%);
-    --White: hsl(0, 0%, 100%);
+  --Strong-cyan: hsl(172, 67%, 45%);
+  --Very-dark-cyan: hsl(183, 100%, 15%);
+  --Dark-grayish-cyan: hsl(186, 14%, 43%);
+  --Mick: rgb(13, 104, 109);
+  --Grayish-cyan: hsl(184, 14%, 56%);
+  --Light-grayish-cyan: hsl(185, 41%, 84%);
+  --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --White: hsl(0, 0%, 100%);
 }
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 body {
-    cursor: default;
-    width: 100vw;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--Light-grayish-cyan);
-    font-family: 'Space Mono', monospace;
-    position: relative;
+  cursor: default;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--Light-grayish-cyan);
+  font-family: "Space Mono", monospace;
+  position: relative;
 }
 main {
-    display: flex;
-    flex-direction: column;
-    width: 375px;
-    margin-bottom: 36px;
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  margin-bottom: 36px;
 }
 .logo-area {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .logo {
-    margin: 50px 0 40px 0;
+  margin: 50px 0 40px 0;
 }
 .form {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--Very-light-grayish-cyan);
-    border-top-left-radius: 24px;
-    border-top-right-radius: 24px;
-    padding: 32px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Very-light-grayish-cyan);
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  padding: 32px;
 }
 label {
-    color: var(--Dark-grayish-cyan);
+  color: var(--Dark-grayish-cyan);
+  cursor: pointer;
 }
 .bill-label {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .bill {
-    background-image: url(images/icon-dollar.svg);
-    padding-right: 12px;
+  background-image: url(images/icon-dollar.svg);
 }
 .bill,
 .head {
-    height: 40px;
-    width: 98%;
-    background-repeat: no-repeat;
-    background-position: left 16px center;
-    border: none;
-    border-radius: 6px;
-    text-align: right;
-    color: var(--Very-dark-cyan);
-    font-family: 'Space Mono', monospace;
-    font-size: 24px;
-    letter-spacing: -0.5px;
-    margin: 10px auto 36px auto;
+  height: 40px;
+  width: 98%;
+  background-repeat: no-repeat;
+  background-position: left 16px center;
+  border: none;
+  border-radius: 6px;
+  text-align: right;
+  color: var(--Very-dark-cyan);
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
+  letter-spacing: -0.5px;
+  margin: 10px auto 36px auto;
+  padding-right: 12px;
 }
 .bill:focus,
 .head:focus {
-    outline: none;
-    border: 2px solid var(--Strong-cyan);
-    margin: 9px 0 33px 0;
+  outline: none;
+  border: 2px solid var(--Strong-cyan);
+  margin: 9px 0 33px 0;
 }
 .bill::placeholder,
 .head::placeholder,
 .custom::placeholder {
-    color: var(--Grayish-cyan);
+  color: var(--Grayish-cyan);
 }
 .bill::-webkit-outer-spin-button,
 .bill::-webkit-inner-spin-button,
@@ -90,248 +91,245 @@ label {
 .head::-webkit-inner-spin-button,
 .custom::-webkit-outer-spin-button,
 .custom::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-
+  -webkit-appearance: none;
 }
 .tip {
-    margin: 0 0 16px 0;
+  margin: 0 0 16px 0;
 }
 .grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 16px;
-    margin: 0 0 32px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 16px;
+  margin: 0 0 32px 0;
 }
 button {
-    cursor: pointer;
-    width: 147px;
-    height: 48px;
-    font-family: 'Space Mono', monospace;
-    font-size: 25px;
-    color: var(--Light-grayish-cyan);
-    background-color: var(--Very-dark-cyan);
-    border: none;
-    border-radius: 6px;
+  cursor: pointer;
+  width: 147px;
+  height: 48px;
+  font-family: "Space Mono", monospace;
+  font-size: 25px;
+  color: var(--Light-grayish-cyan);
+  background-color: var(--Very-dark-cyan);
+  border: none;
+  border-radius: 6px;
 }
 .form button:focus {
-    background-color: var(--Strong-cyan);
-    color: var(--Very-dark-cyan);
-    outline: none;
+  background-color: var(--Strong-cyan);
+  color: var(--Very-dark-cyan);
+  outline: none;
 }
 .form button:hover {
-    background-color: var(--Light-grayish-cyan);
-    color: var(--Very-dark-cyan);
+  background-color: var(--Light-grayish-cyan);
+  color: var(--Very-dark-cyan);
 }
 .custom {
-    width: 148px;
-    height: 48px;
-    text-align: right;
-    color: var(--Very-dark-cyan);
-    box-sizing: border-box;
-    padding-right: 16px;
-    font-size: 24px;
-    font-family: 'Space Mono', monospace;
-    border: none;
-    border-radius: 6px;
+  width: 148px;
+  height: 48px;
+  text-align: right;
+  color: var(--Very-dark-cyan);
+  box-sizing: border-box;
+  padding-right: 16px;
+  font-size: 24px;
+  font-family: "Space Mono", monospace;
+  border: none;
+  border-radius: 6px;
 }
 .custom:focus {
-    outline: none;
-    border: 2px solid var(--Strong-cyan);
+  outline: none;
+  border: 2px solid var(--Strong-cyan);
 }
 .head-label {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .head {
-    background-image: url(images/icon-person.svg);
+  background-image: url(images/icon-person.svg);
 }
 .no-bill,
 .error {
-    color: red;
-    opacity: 0;
+  color: red;
+  opacity: 0;
 }
 .output-container {
-    padding: 0 24px 24px;
-    background-color: var(--White);
+  padding: 0 24px 24px;
+  background-color: var(--White);
 }
 .outputs {
-    background-color: var(--Very-dark-cyan);
-    color: var(--White);
-    border-radius: 15px;
-    padding: 24px 22px 24px 24px;
+  background-color: var(--Very-dark-cyan);
+  color: var(--White);
+  border-radius: 15px;
+  padding: 24px 22px 24px 24px;
 }
 .tip-output,
 .total-output {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    margin: 0 0 9px 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 0 0 9px 0;
 }
 h1 {
-    font-size: 16px;
-    margin: 15px 0 0 0;
+  font-size: 16px;
+  margin: 15px 0 0 0;
 }
 h2 {
-    font-size: 13px;
-    color: var(--Grayish-cyan);
+  font-size: 13px;
+  color: var(--Grayish-cyan);
 }
 h3 {
-    color: var(--Strong-cyan);
-    font-size: 31px;
+  color: var(--Strong-cyan);
+  font-size: 31px;
 }
 .reset {
-    cursor: default;
-    background-color: rgb(13, 104, 109);
-    color: var(--Very-dark-cyan);
-    border: none;
-    font-size: 20px;
-    font-family: 'Space Mono', monospace;
-    text-transform: uppercase;
-    margin: 25px 0 0 0 ;
-    width: 100%;
+  cursor: default;
+  background-color: rgb(13, 104, 109);
+  color: var(--Very-dark-cyan);
+  border: none;
+  font-size: 20px;
+  font-family: "Space Mono", monospace;
+  text-transform: uppercase;
+  margin: 25px 0 0 0;
+  width: 100%;
 }
 footer {
-    background-color: var(--White);
-    position: absolute;
-    bottom: 0;
-    width: 375px;
-    height: 4vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: var(--White);
+  position: absolute;
+  bottom: 0;
+  width: 375px;
+  height: 4vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.attribution { 
-    font-size: 11px; 
-    text-align: center; 
+.attribution {
+  font-size: 11px;
+  text-align: center;
 }
-.attribution a { 
-    font-size: 13px;
-    letter-spacing: 2px;
-    color: var(--Mick); 
+.attribution a {
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: var(--Mick);
 }
 @media (max-width: 374px) {
-    main {
-        width: 100vw;
-    }
-    .grid {
-        align-self: center;
-        grid-template-columns: repeat(1, 1fr);
-    }
-    button {
-        width: 250px;
-    }
-    .custom {
-        width: 250px;
-        text-align: center;
-    }
-    .outputs {
-        margin-bottom: 20px;
-    }
-    footer {
-        width: 100vw;
-    }
+  main {
+    width: 100vw;
+  }
+  .grid {
+    align-self: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  button {
+    width: 250px;
+  }
+  .custom {
+    width: 250px;
+    text-align: center;
+  }
+  .outputs {
+    margin-bottom: 20px;
+  }
+  footer {
+    width: 100vw;
+  }
 }
 @media (min-width: 1080px) {
-
-    body {
-        justify-content: center;
-    }
-    main {
-        width: 920px;
-        margin: 0;
-    }
-    .logo {
-        margin: 12px 0 86px 0;
-    }
-    .desktop {
-        box-sizing: border-box;
-        height: 482px;
-        display: flex;
-        justify-content: space-between;
-        background-color: var(--Very-light-grayish-cyan);
-        border-radius: 28px;
-        padding: 32px 33px;
-    }
-    .bill,
-    .head {
-        width: 99%;
-        align-self: center;
-    }
-    .form {
-        border-radius: 0px;
-        padding: 14px;
-    }
-    .bill-label {
-        margin: 0 0 10px 0;
-    }
-    .bill {
-        margin: 0 0 44px 0;
-        background-position: left 18px center;
-    }
-    .tip {
-        letter-spacing: -0.1px;
-    }
-    .grid {
-        width: fit-content;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 14px;
-        row-gap: 16px;
-        margin: 0 0 40px 0;
-    }
-    button {
-        width: 117px;
-    }
-    .custom {
-        width: 116px;
-        padding-right: 14px;
-    }
-    .head-label {
-        margin: 0 0 10px 0;
-        letter-spacing: -0.3px;
-    }
-    .head {
-        margin: 0;
-    }
-    .output-container {
-        padding: 0;
-    }
-    .outputs {
-        box-sizing: border-box;
-        width: 413px;
-        height: 418px;
-        padding: 41px 40px 0 40px;
-    }
-    .tip-output,
-    .total-output {
-        align-items: flex-start;
-    }
-    .tip-output {
-        margin: 0 0 26px 0;
-    }
-    .total-output {
-        margin: 0 0 96px 0;
-    }
-    h3 {
-        font-size: 48px;
-        
-    }
-    footer {
-        background-color: var(--Light-grayish-cyan);
-    }
-    .head:focus {
-        transform: translateY(-2px);
-        margin: 0;
-    }
-    .bill:focus {
-        outline: none;
-        border: 2px solid var(--Strong-cyan);
-        margin: 0 0 40px 0;
-    }
+  body {
+    justify-content: center;
+  }
+  main {
+    width: 920px;
+    margin: 0;
+  }
+  .logo {
+    margin: 12px 0 86px 0;
+  }
+  .desktop {
+    box-sizing: border-box;
+    height: 482px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--Very-light-grayish-cyan);
+    border-radius: 28px;
+    padding: 32px 33px;
+  }
+  .bill,
+  .head {
+    width: 99%;
+    align-self: center;
+  }
+  .form {
+    border-radius: 0px;
+    padding: 14px;
+  }
+  .bill-label {
+    margin: 0 0 10px 0;
+  }
+  .bill {
+    margin: 0 0 44px 0;
+    background-position: left 18px center;
+  }
+  .tip {
+    letter-spacing: -0.1px;
+  }
+  .grid {
+    width: fit-content;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 14px;
+    row-gap: 16px;
+    margin: 0 0 40px 0;
+  }
+  button {
+    width: 117px;
+  }
+  .custom {
+    width: 116px;
+    padding-right: 14px;
+  }
+  .head-label {
+    margin: 0 0 10px 0;
+    letter-spacing: -0.3px;
+  }
+  .head {
+    margin: 0;
+  }
+  .output-container {
+    padding: 0;
+  }
+  .outputs {
+    box-sizing: border-box;
+    width: 413px;
+    height: 418px;
+    padding: 41px 40px 0 40px;
+  }
+  .tip-output,
+  .total-output {
+    align-items: flex-start;
+  }
+  .tip-output {
+    margin: 0 0 26px 0;
+  }
+  .total-output {
+    margin: 0 0 96px 0;
+  }
+  h3 {
+    font-size: 48px;
+  }
+  footer {
+    background-color: var(--Light-grayish-cyan);
+  }
+  .head:focus {
+    transform: translateY(-2px);
+    margin: 0;
+  }
+  .bill:focus {
+    outline: none;
+    border: 2px solid var(--Strong-cyan);
+    margin: 0 0 40px 0;
+  }
 }
 .active {
-    cursor: pointer;
-    background-color: var(--Strong-cyan);
-    color: var(--Very-dark-cyan);
+  cursor: pointer;
+  background-color: var(--Strong-cyan);
+  color: var(--Very-dark-cyan);
 }
